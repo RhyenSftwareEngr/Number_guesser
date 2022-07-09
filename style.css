@@ -1,195 +1,209 @@
 * {
-  font-family: 'Nunito Sans';
-  box-sizing: border-box;
+    font-family: 'Nunito Sans';
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0 auto;
-  padding: 3px;
-  background-color: #fff;
+    margin: 0 auto;
+    padding: 3px;
+    background-color: #fff;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0zJsLO2bMT0oX4aYu0TQjWYjBZ1jUevRyCw&usqp=CAU');
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
 }
 
 .game-container {
-  max-width: 640px;
-  margin: 0 auto;
-  text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 header {
-  display: flex;
-  justify-content: center
+    display: flex;
+    justify-content: center
 }
 
 .rounds {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .round-label {
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 0px;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 0px;
 }
 
 .guess {
-  min-width: 303px;
-  height: 328px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 19px;
+    min-width: 303px;
+    height: 328px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 19px;
 }
 
 .guessing-area {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  margin-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 60px;
 }
 
 .guess-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
 }
 
 .guess-label {
-  font-size: 18px;
-  font-weight: 700;
-  margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
 }
 
 .score-label {
-  font-size: 14px;
-  font-weight: 700;
-  margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .target-guess {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .computer-guess {
-  background-color: #ececec;
+    background-color: #ececec;
+    border-radius: 50%;
+    background-image: url('https://i.pinimg.com/originals/8b/e2/3a/8be23a3b87c1aae4534d8f141aa4c44f.gif');
 }
 
 #computer-guess {
-  font-size: 50px;
-  font-weight: 700;
-  color: #a5a5a5;
+    font-size: 70px;
+    font-weight: 700;
+    color: #a5a5a5;
+    margin-top: 25px;
 }
 
 .human-guess {
-  border: 1px solid #979797;
+    border: 1px solid #979797;
+    border-radius: 50%;
+    background-image: url('https://i.pinimg.com/originals/8b/e2/3a/8be23a3b87c1aae4534d8f141aa4c44f.gif');
 }
 
 .guess input {
-  height: 90px;
-  width: 90px;
-  font-size: 30px;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 7px;
+    height: 90px;
+    width: 90px;
+    font-size: 70px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    background-image: url('https://i.pinimg.com/originals/8b/e2/3a/8be23a3b87c1aae4534d8f141aa4c44f.gif');
 }
 
 .number-controls {
-  font-size: 0;
-  margin-bottom: 23px;
+    font-size: 0;
+    margin-bottom: 23px;
 }
 
 .number-control {
-  border: solid 1px #4c7ef3;
-  display: inline-block;
-  width: 45px;
-  height: 35px;
-  font-size: 24px;
-  font-weight: 700;
-  color: #4c7ef3;
-  cursor: pointer;
+    border: solid 1px #4c7ef3;
+    display: inline-block;
+    width: 45px;
+    height: 35px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #4c7ef3;
+    cursor: pointer;
 }
 
 .number-controls button[disabled] {
-  color: #dfdfdf;
-  cursor: default;
+    color: #dfdfdf;
+    cursor: default;
 }
 
 .left {
-  border-top-left-radius: 22.5px;
-  border-bottom-left-radius: 22.5px;
+    border-top-left-radius: 22.5px;
+    border-bottom-left-radius: 22.5px;
 }
 
 .right {
-  border-top-right-radius: 22.5px;
-  border-bottom-right-radius: 22.5px;
-  border-left-width: 0px;
+    border-top-right-radius: 22.5px;
+    border-bottom-right-radius: 22.5px;
+    border-left-width: 0px;
 }
 
 .controls {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 .button {
-  background-color: #4c7ef3;
-  color: #fff;
-  cursor: pointer;
+    background-color: #333333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 60px;
+    padding: 5px;
 }
 
 #guess {
-  padding: 20px;
-  width: 169px;
-  height: 59px;
-  border: none;
-  font-weight: 700;
-  font-size: 14px;
+    padding: 13px;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+    -webkit-appearance: none;
 }
 
 #next-round {
-  width: 179px;
-  height: 64px;
-  font-size: 18px;
-  font-weight: bold;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
+    width: 179px;
+    height: 64px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
 }
-  
+
 .button[disabled] {
-  background-color: #d2d2d2;
-  color: #a0a0a0;
-  cursor: default;
+    background-color: #d2d2d2;
+    color: #a0a0a0;
+    cursor: default;
 }
 
 .instructions {
-  background-color: #ececec;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+    background-color: #ececec;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .instruction {
-  width: 180px;
-  padding: 2px;
-  text-align: center;
+    width: 180px;
+    padding: 2px;
+    text-align: center;
 }
 
 .instructions h3 {
-  font-size: 14px;
+    font-size: 14px;
 }
 
-
-.winning-text, .winning-text[disabled] {
-  color: #ec3636;
-  font-weight: 700;
+.winning-text,
+.winning-text[disabled] {
+    color: #ec3636;
+    font-weight: 700;
 }
